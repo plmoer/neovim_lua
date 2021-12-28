@@ -71,17 +71,17 @@ cmp.setup({
     -- Set `select` to `false` to only confirm explicitly selected items.
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
 
-        ["<Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then
-        cmp.select_next_item()
-      elseif vim.fn["vsnip#available"](1) == 1 then
-        feedkey("<Plug>(vsnip-expand-or-jump)", "")
-      elseif has_words_before() then
-        cmp.complete()
-      else
-        fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
-      end
-    end, { "i", "s" }),
+    --     ["<Tab>"] = cmp.mapping(function(fallback)
+    --   if cmp.visible() then
+    --     cmp.select_next_item()
+    --   elseif vim.fn["vsnip#available"](1) == 1 then
+    --     feedkey("<Plug>(vsnip-expand-or-jump)", "")
+    --   elseif has_words_before() then
+    --     cmp.complete()
+    --   else
+    --     fallback() -- The fallback function sends a already mapped key. In this case, it's probably `<Tab>`.
+    --   end
+    -- end, { "i", "s" }),
 
     ["<S-Tab>"] = cmp.mapping(function()
       if cmp.visible() then
