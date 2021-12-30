@@ -99,8 +99,11 @@ return packer.startup(function(use)
   -- nvim-treesitter
   use {'nvim-treesitter/nvim-treesitter', run=":TSUpdate"}
 
-  -- 
+  -- formating
   use 'jose-elias-alvarez/null-ls.nvim'
+
+  -- indentation line
+  use 'lukas-reineke/indent-blankline.nvim'
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

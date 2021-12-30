@@ -11,6 +11,7 @@ require('lsp.lspkind-config')
 require('lsp.cmp-config')
 require('lsp.null-ls')
 require('lsp.tree-sitter')
+require('lsp.indent-blankline')
 
 --set color scheme
 --vim.o.background = "dark" -- or "light" for light mode
