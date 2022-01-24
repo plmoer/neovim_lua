@@ -17,6 +17,7 @@ require('lsp.indent-blankline')
 --vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])
 
+
 --set airline
 vim.g.airline_theme = "onedark"
 
