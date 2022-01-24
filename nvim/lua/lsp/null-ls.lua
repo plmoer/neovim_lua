@@ -4,6 +4,7 @@ local formatting = null_ls.builtins.formatting
 
 local sources = {
         formatting.autopep8,
+        formatting.clang-format,
     formatting.eslint,
     formatting.stylua,
 }
